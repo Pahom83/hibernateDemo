@@ -1,14 +1,16 @@
 package ru.netology.hibernatedemo.domain;
 
-import jakarta.persistence.Embeddable;
+import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
+import javax.persistence.Embeddable;
 import java.io.Serializable;
 @ToString
+@Data
 @Embeddable
 @EqualsAndHashCode
-public class User implements Serializable {
+public class Buyer implements Serializable {
     private String name;
     private String surname;
     private int age;

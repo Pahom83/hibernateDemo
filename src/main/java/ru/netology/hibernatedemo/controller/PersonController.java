@@ -22,4 +22,5 @@ public class PersonController {
     public List<Person> getCity(@RequestParam("city") String city){
         return personService.getPersonByCity(city);
     }
+
 }
